@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="renderer" content="webkit" />
+		<title>SolarEasyPay</title>
+		<meta name="description" content="SolarEasyPay." />
+
+		<link rel="stylesheet" href="res/tfny/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="res/tfny/css/reset.css" />
+		<link rel="stylesheet" href="res/tfny/css/common.css" />
+		<link rel="stylesheet" href="res/tfny/css/index.css" />
+		<link rel="stylesheet" href="res/tfny/css/responsive_v%3D1.css" />
+		
+		
+		<!-- jQuery (must come before Toastr and anything that uses it) -->
+		<script src="res/tfny/js/jquery.min.js"></script>
+		
+		<!-- Toastr Script (depends on jQuery) -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+		<!-- EmailJS (independent) -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+
+		<!-- Other plugins -->
+		<script src="res/tfny/js/waypoints.min.js" defer></script>
+		<script src="res/tfny/js/jquery.counterup.min.js" defer></script>
+		<script src="res/tfny/js/function.js" defer></script>
+
+		<!-- Custom script (make sure it runs after dependencies are ready) -->
+		<script src="/res/tfny/js/email.js" defer></script>
+
+		<!-- Inline Script (executes when DOM is ready) -->
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function () {
+				if (document.querySelector(".counter")) {
+					$(".counter").counterUp({
+						delay: 5,
+						time: 2000,
+					});
+				}
+
+				// Dynamically populate the counter-signup span
+				const waitlistCountElement = document.querySelector(".counter-signup");
+				if (waitlistCountElement) {
+					// Replace '123' with actual value
+					waitlistCountElement.textContent = "123";
+				}
+			});
+		</script>
+
+	</head>
+	<body>
+		<div
+			id="js-search-overlay"
+			class="top-search-overlay"></div>
+		<div class="M_search">
+			<input
+				class="mInp1"
+				type="text"
+				placeholder="Search ..." />
+			<button type="button" class="m_search_btn">
+				<img
+					src="res/tfny/images/icon-search.png"
+					alt="" />
+			</button>
+		</div>
+
+		<header class="site-head">
+			<div class="site-nav">
+				<div class="auto-container">
+					<header class="head clearfix">
+						<div class="logo">
+							<a href="#" title="Learn more about SolarEasyPay">
+								<img
+									src="res/tfny/images/logo.png"
+									class="logoImg"
+									title="Company Logo"/>
+							</a>
+						</div>
+						
+						<div class="navbtn">
+							<i class="bar-1"></i>
+							<i class="bar-2"></i>
+							<i class="bar-3"></i>
+						</div>
+						<div class="navBar">
+							<ul class="navbox">
+								<li class="active">
+									<div class="stair">
+										<a title="Learn more about SolarEasyPay"
+											href="#"
+											class="a"
+											>Home
+										</a>
+									</div>
+								</li>
+
+                <!-- About Us -->
+								<li class="hasdrop">
+									<div class="stair">
+										<a title="Learn more about SolarEasyPay"
+											href="#aboutIt"
+											class="a">
+											About Us <!-- <i class="mobile-navbtn hidden-md hidden-lg"></i> -->
+										</a>
+									</div>
+								</li>
+                
+								
+								<li class="hasdrop">
+									<div class="stair">
+										<a title="Learn more about SolarEasyPay"
+											href="https://wa.me/2347030162469" target="_blank" rel="noopener"
+											class="a">
+											Contact us
+										</a>
+									</div>
+								</li>
+								<li class="hasdrop">
+									<div class="stair">
+										<a
+											href="/faq.html"
+											class="a">
+											FAQ
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</header>
+				</div>
+			</div>
+
+			<div class="gtranslate_wrapper"></div>
+		</header>
+
+		<div class="Home-banner">
+			<video
+				id="videos"
+				muted="muted"
+				width="100%"
+				height="auto"
+				src="res/tfny/video/Hero-Video.mp4"
+				autoplay="autoplay"
+				loop
+				playsinline=""></video>
+
+			<div class="video-text">
+				<a href="https://wa.me/2347030162469" target="_blank" rel="noopener">Contact us</a>
+			</div>
+		</div>
+
+		<main>
+			<section class="section section-why">
+				<div class="auto-container">
+					<div
+						class="home_title wow fadeInUp"
+						data-wow-delay="0.3s">
+						<div>What are the advantages of choosing SolarEasyPay</div>
+					</div>
+					<ul class="why_ul clearfix">
+						<li
+							class="wow fadeInUp"
+							data-wow-delay="0.2s">
+							<div class="item">
+								<span class="title_img"
+									><img
+										src="uploadfile/2022/05/11/202205111055461YstiG.png"
+										alt=""
+								/></span>
+								<div class="t">Installment Plan</div>
+								<p>
+									Own your solar product with ease! Enjoy affordable, stress-free payments with our Pay-Small-Small plan. No huge upfront cost—just convenient installments designed to fit your budget.
+								</p>
+								<a
+									class="c-btn-move"
+									href="#container">
+									Apply
+									<img
+										src="res/tfny/images/tf-arrow.png"
+										alt="arrow"
+										class="arrow"
+								/></a>
+							</div>
+						</li>
+						<li
+							class="wow fadeInUp"
+							data-wow-delay="0.2s">
+							<div class="item">
+								<span class="title_img"
+									><img
+										src="res/tfny/images/money.jpg"
+										alt=""
+								/></span>
+								<div class="t">Save & Earn</div>
+								<p>
+									Set money aside for your solar purchase while earning interest on your savings. Secure your solar future with trusted expertise and a smart savings plan that makes ownership even more affordable!
+								</p>
+								<a
+									class="c-btn-move"
+									href="#container">
+									Apply
+									<img
+										src="res/tfny/images/tf-arrow.png"
+										alt="arrow"
+										class="arrow"
+								/></a>
+							</div>
+						</li>
+						<li
+							class="wow fadeInUp"
+							data-wow-delay="0.2s">
+							<div class="item">
+								<span class="title_img"
+									><img
+										src="uploadfile/2022/05/11/20220511105927irEdul.png"
+										alt=""
+								/></span>
+								<div class="t">Services & Support</div>
+								<p>
+									Get perfect solar solutions tailored to your needs. With a dedicated support team, we proudly serve customers across Nigeria, providing 24/7 after-sales service for a seamless experience!
+								</p>
+								<a
+									class="c-btn-move"
+									href="#container">
+									Apply
+									<img
+										src="res/tfny/images/tf-arrow.png"
+										alt="arrow"
+										class="arrow"
+								/></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section section-case">
+				<div class="auto-container">
+					<dl
+						class="wow fadeInUp"
+						data-wow-delay="0.3s">
+						<dd>
+							<div class="figure_box">
+								<img
+									src="uploadfile/2022/05/17/20220517162213BNUmRw.jpg"
+									alt="" />
+							</div>
+							<div class="con_box">
+								<div class="t">Home Solar Financing</div>
+								<div class="c">
+									Get the solar power you need, hassle-free! Keep your food fresh, your lights bright, and your AC running smoothly with flexible payment plans. With SolarEasyPay, you can pay in installments or save up for the perfect solar solution—giving you energy independence without financial stress!
+								</div>
+								<a href="https://wa.me/2347030162469" target="_blank" rel="noopener"
+									>Make Enquiries
+									<img
+										src="res/tfny/images/tf-arrow.png"
+										alt="arrow"
+										class="arrow"
+								/></a>
+							</div>
+						</dd>
+						<dd>
+							<div class="figure_box">
+								<img
+									src="uploadfile/2022/05/17/20220517162311gwlTBz.jpg"
+									alt="" />
+							</div>
+							<div class="con_box">
+								<div class="t">Commercial Solar Financing</div>
+								<div class="c">
+									Power your business, factory, or farm with reliable solar energy—without the financial burden! With SolarEasyPay, you can pay in installments or save up for a complete solar solution. Achieve energy independence and enjoy zero electricity bills for decades with flexible, stress-free financing!
+								</div>
+								<a href="https://wa.me/2347030162469" target="_blank" rel="noopener"
+									>Make Enquiries
+									<img
+										src="res/tfny/images/tf-arrow.png"
+										alt="arrow"
+										class="arrow"
+								/></a>
+							</div>
+						</dd>
+						<dd>
+							<div class="figure_box">
+								<img
+									src="uploadfile/2022/05/17/20220517162508M9APf7.jpg"
+									alt="" />
+							</div>
+							<div class="con_box">
+								<div class="t">Smart IoT-Enabled Solar Financing</div>
+								<div class="c">
+									Monitor and manage your solar system anytime, anywhere with advanced IoT technology. Track performance, receive real-time updates, and get timely maintenance reminders—all from your smartphone. With SolarEasePay, you can pay in installments or save up for a smarter, more efficient solar solution!
+								</div>
+								<a href="https://wa.me/2347030162469" target="_blank" rel="noopener"
+									>Make Enquiries
+									<img
+										src="res/tfny/images/tf-arrow.png"
+										alt="arrow"
+										class="arrow"
+								/></a>
+							</div>
+						</dd>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section section-partent">
+						<div 
+							class="home_title wow fadeInUp"
+							data-wow-delay="0.3s">
+							<div>SolarEasyPay Partners</div>
+						</div>
+						<div
+							class="partents wow fadeInUp"
+							data-wow-delay="0.3s">
+								<!-- Partners -->
+									<div class="img">
+										<img
+											src="res/tfny/images/jsds.jpg"
+											alt="" />
+									</div>
+								
+									<div class="img">
+										<img
+											src="res/tfny/images/Jonmaco.jpg"
+											alt="" />
+									</div>
+									<div class="img">
+										<img
+											src="res/tfny/images/hcl_logo.jpg"
+											alt="" />
+									</div>
+						</div>
+			</section>
+
+			<section
+				class="section section-about"
+				 id="aboutIt"
+				style="
+					background: url(res/tfny/images/solar-panel2.png)
+						no-repeat right #000;
+					background-attachment: fixed;
+				">
+				<div class="overlay"></div>
+				<div class="auto-container">
+					<div class="Home_about_table">
+						<div
+							class="about_l wow fadeInLeft"
+							data-wow-delay="0.2s">
+							<div
+								class="home_title wow fadeInUp"
+								data-wow-delay="0.3s">
+								<div>About SolarEasyPay</div>
+							</div>
+								<p>
+									At SolarEasyPay, we empower individuals and businesses to access reliable solar energy through flexible payment solutions. We partner with solar companies to offer seamless installment payment plans, ensuring customers can enjoy solar power without financial strain.
+									<br><br>
+									With SolarEasyPay, customers can:<br>
+									✅ Pay in Installments – Spread the cost of their solar products over time with a small service fee.<br>
+									✅ Save and Earn Interest – Our unique savings model allows customers to set aside funds for any solar product of their choice.<br>
+									✅ Track Payments Easily – Stay informed about due dates and outstanding balances with our user-friendly system.
+									<br><br>
+									Currently operating in Lagos, Nigeria, we are committed to expanding our reach to serve more communities, both urban and rural. Whether you prefer installment payments or want to save up for a solar solution, SolarEasyPay has you covered!
+									<br><br>
+									Power your home, business, or community with ease. Choose SolarEasyPay – Affordable. Flexible. Reliable.
+								</p>
+						</div>
+						<dl
+							class="data-num clearfix wow fadeInUp"
+							data-wow-delay="0.3s">
+							<dd>
+								<strong> <span class="counter"> 2025</span></strong>
+								<div>Year of Establishment</div>
+							</dd>
+							<dd>
+								<strong> <span class="counter"> 1</span></strong>
+								<div>Country of Service</div>
+							</dd>
+							<dd class="waitlist-count">
+								<strong> <span class="counter-signup">0</span></strong>
+								<div>Waitlist Count</div>
+							</dd>
+							<dd>
+								<strong> <span class="counter"> 3</span>+</strong>
+								<div>Business Partners</div>
+							</dd>
+						</dl>
+						
+						<div class="more text-left">
+							<a href="https://wa.me/2347030162469" target="_blank" rel="noopener"
+								>Learn More
+								<img
+									src="res/tfny/images/tf-arrow.png"
+									alt="arrow"
+									class="arrow"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+	<!-- Executives -->
+	<section class="section section-partent">
+		<div 
+			class="home_title wow fadeInUp"
+			data-wow-delay="0.3s">
+			<div>Our Team</div>
+		</div>
+		<div
+			class="partents wow fadeInUp"
+			data-wow-delay="0.3s">
+				<!-- Partners -->
+					<div class="img">
+						<img
+							src="res/tfny/images/daniel.png"
+							alt="" />
+							<p class="name">CHIKEZIE, Daniel</p>
+							<p class="position">Founder/Ceo.</p>
+							<p class="role">I am passionate about solving Africa’s energy crisis. At SolarEasyPay, I lead with innovation to make clean, affordable solar power a reality for everyone—one payment at a time.
+							</p>
+					</div>
+				
+					<div class="img">
+						<img
+							src="res/tfny/images/paulo.png"
+							alt="" />
+							<p class="name">CHIKEZIE, Paul</p>
+							<p class="position">Co-founder</p>
+							<p class="role">As co-founder, I am committed to making solar energy accessible through smart financial solutions. We are not just selling solar—we are empowering lives sustainably.
+							</p>
+					</div>
+					<div class="img">
+						<img
+							src="res/tfny/images/pee.png"
+							alt="" />
+							<p class="name">KALU, Kalu</p>
+							<p class="position">Operation Manager</p>
+							<p class="role">I ensure that every customer experience is smooth and reliable. From product delivery to after-sales support, I help turn clean energy dreams into daily reality.
+							</p>
+					</div>
+		</div>
+	</section>
+		<div id="container"></div>
+			<section class="home_msg_bg">
+				<div class="container">
+					<div class="Home_title">
+						<h3 class="t">Sign up for our waitlist and get early <br>access + exclusive perks!</h3>
+				</div>
+
+				<form class="form-horizontal" role="form" id="contactForm" name="myform">
+					<input type="hidden" name="form[page_title]" value="SolarEasyPay, solar panel inverter, solar home system factory" />
+					<input type="hidden" name="form[page_url]" value="/" />
+					<input type="hidden" name="form[ip]" value="62.133.61.131" />
+				
+					<div class="form-group row">
+						<div class="col-md-4 mb-3">
+							<input type="text" class="form-control" placeholder="Name *" name="form[name]" required />
+						</div>
+						<div class="col-md-4 mb-3">
+							<input type="text" class="form-control" placeholder="Tel" name="form[phone]" />
+						</div>
+						<div class="col-md-4 mb-3">
+							<input type="email" class="form-control" placeholder="E-mail *" name="form[email]" required />
+						</div>
+						<div class="col-md-12 mb-3">
+							<textarea class="form-control" rows="4" placeholder="Message *" name="form[content]" required></textarea>
+						</div>
+						<div class="col-12 text-center">
+							<button type="submit" class="btn btn-primary submit-btn">
+								Submit
+								<img src="res/tfny/images/tf-arrow.png" alt="arrow" class="arrow" />
+							</button>
+						</div>
+					</div>
+				</form>
+				
+
+			</div>
+		</section>
+	</main>
+
+		<footer>
+			<div class="footer">
+				<div class="auto-container clearfix">
+					<div class="footer_content clearfix">
+						
+						<div class="link foot-logo">
+							
+							<dd class="f-logo">
+								<!-- <a href="javascript:" rel="noopener" title="Learn more about SolarEasyPay">
+									Learn More
+								</a> -->
+								<a href="#" title="Learn more about SolarEasyPay">
+									<img
+										src="res/tfny/images/logo.png"
+										alt=""
+								/></a>
+							</dd>
+							
+							<dd>
+								<!-- <div class="ftet">SolarEasyPay Technology</div> -->
+								<p class="p" style="margin-top: 20px;">
+									We make solar ownership simple, accessible, and rewarding. <br><span style="color: #fff;">🔋 Power your home, your way!</span>
+
+								</p>
+							</dd>
+							
+							<dd>
+								<div class="addthis_inline_share_toolbox_51ak">
+									<ul id="new-link">
+										<!-- <li>
+											<a
+												title="image"
+												href="#"
+												rel="noopener"
+												target="_blank">
+												<img
+												src="uploadfile/2022/05/11/20220511095707K5Adsf.png"
+												alt="" />
+											</a>
+										</li>
+										<li>
+											<a
+												title="image"
+												href="#"
+												rel="noopener"
+												target="_blank">
+												<img
+													src="uploadfile/2022/05/11/202205110957004Qq6ut.png"
+													alt="" />
+											</a>
+										</li> -->
+										<!-- <li>
+											<a
+												href="#"
+												target="_blank" rel="noopener">
+												<img
+													src="uploadfile/2022/05/11/20220511095644LQDe83.png"
+													alt="" />
+													rel="noopener"
+											</a>
+										</li> -->
+										<!-- <li>
+											<a
+												title="image"
+												href="#"
+												target="_blank" rel="noopener">
+												<img
+													src="uploadfile/2022/05/11/20220511095636h9bsNV.png"
+													alt="" />
+											</a>
+										</li> -->
+									</ul>
+								</div>
+							</dd>
+						</div>
+						<div class="hotlinks">
+							
+							<dl class="hidden-xs hidden-sm arrLinks">
+								<dt>Quick Link</dt>
+								<dd><a href="#" rel="noopener"> Home </a></dd>
+								<dd><a href="#aboutIt" rel="noopener"> About Us</a></dd>
+								<dd><a href="https://wa.me/2347030162469" target="_blank" rel="noopener"> Contact us</a></dd>
+								<dd><a href="/faq.html" rel="noopener">FAQ</a></dd>
+							</dl>
+							
+							<dl class="link contact-us">
+								<div>
+										+234 7030162469
+										For more enquiries email or call:
+									</dd>
+									<dd class="email">
+										<a href="mailto:admin@tanfon.com" rel="noopener">solareasypay247@gmail.com</a>
+									</dd>
+									<dd class="email">
+										+234 7030162469</a>
+									</dd>
+									<dd>
+										<a
+											href="https://wa.me/2347030162469" target="_blank"
+											class="talk-link"
+											rel="noopener"
+											>Let’s Talk
+											<img
+												src="res/tfny/images/tf-arrow.png"
+												alt="arrow"
+												class="arrow"
+										/></a>
+									</dd>
+								</div>
+							</dl>
+						
+						</div>
+					
+					</div>
+				
+				</div>
+			</div>
+			<div
+				class="up_arr">
+				<a href="#">
+					<img
+						src="res/tfny/images/up_arr.png"
+						alt="arrow"
+						class="arrowUp"
+						style="cursor: pointer"
+						id="goTopButton" />
+				</a>
+			</div>
+		</footer>
+
+
+		<div class="footerbar">
+			<div class="auto-container clearfix">
+				<div class="inner">
+					<p class="copyright">
+						<a href="#"
+							>Copyright © 2025 SolarEasyPay. All
+							rights reserved.</a
+						>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			function goTop() {
+				$("html,body").animate({ scrollTop: 0 }, 500, function () {});
+			}
+		</script>
+	</body>
+</html>
